@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@100&display=swap');
+
+* 
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body
+{
+ background: #EEEEEC;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+
+.container 
+{
+ width: 300px;
+ height: 500px;
+ border-radius: 10px;
+ background: #FDFEFF;
+ display: flex;
+ flex-direction: column;
+ box-shadow: 0 8px 40px rgba(#000000, .2);
+ padding: 20px;
+}
+
+.container:after
+{
+ content: '';
+ z-index: -2;
+ position: relative;
+ top: 0;
+ left: 0;
+ width: 50%;
+ height: 300px;
+ background: #D7D7DB;
+}
+
+.profile 
+{
+ display: flex;
+ justify-content: center;
+ margin-top: 20px;
+}
+
+.profile img 
+{
+ width: 100px;
+ border-radius: 50%;
+ box-shadow: 0 8px 40px rgba(0,0,0, .2);
+ border: 4px solid #444449;
+}
+
+.main ul li 
+{
+ list-style: none;
+}
+
+h1
+{
+ text-align: center;
+ font-family: 'Allura' ,cursive;
+ font-weight: 800;
+}
+
+h2
+{
+ text-align: center;
+ font-family: 'Allura' ,cursive;
+ font-weight: 300;
+}
+
+.main 
+{
+ display: flex;
+ justify-content: center;
+ margin: 20px 0;
+}
+
+.main ul li
+{
+ font-family: 'Montserrat',sans-serif;
+ font-weight: 1000;
+}
+
+.bible
+{
+ display: flex;
+ justify-content: center;
+ padding: 20px;
+}
+.bible .content 
+{
+ background: #2B2B2E;
+ border: 2px solid #2B2B2E;
+ padding: 10px 20px;
+ color: #BEBFC9;
+ border-radius: 10px;
+}
+
+.social-media ul
+{
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.social-media ul li 
+{
+ list-style: none;
+ font-size: 35px;
+}
+
+.cake ul li 
+{
+ list-style: none;
+ position: absolute;
+ font-size: 2em;
+ z-index: -1;
+}
+
+.cake ul li:nth-child(1)
+{
+ top: 10%;
+ left: 10%;
+ animation: animasi1 2s linear-infinite;
+}
+
+.cake ul li:nth-child(2)
+{
+ top: 10%;
+ right: 10%;
+}
+.cake ul li:nth-child(3)
+{
+ bottom: 10%;
+ left: 10%;
+}
+.cake ul li:nth-child(4)
+{
+ bottom: 10%;
+ right: 10%;
+}
